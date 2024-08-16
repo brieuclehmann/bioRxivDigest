@@ -21,7 +21,6 @@ threshold: 7
 # This can be empty, which just return a full list of papers with no judgement or filtering,
 # in whatever order arXiv responds with.
 interest: |
-  1. Health equity
+  1. Statistical or machine learning methods that identify or mitigate health disparities
   2. Algorithmic fairness
-  3. Experimental design
-  4. Uncertainty quantification
+  3. Methodological approaches around the topic of health equity

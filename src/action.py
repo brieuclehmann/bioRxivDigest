@@ -2,6 +2,7 @@ from sendgrid import SendGridAPIClient
 from sendgrid.helpers.mail import Mail, Email, To, Content
 
 from datetime import date
+from python_http_client.exceptions import HTTPError
 
 import argparse
 import yaml
@@ -77,7 +78,10 @@ if __name__ == "__main__":
         mail_json = mail.get()
 
         # Send an HTTP POST request to /mail/send
-        response = sg.client.mail.send.post(request_body=mail_json)
+        try:
+            response = sg.client.mail.send.post(request_body=mail_json)
+        except HTTPError as e:
+            print(e.to_dict)
         if response.status_code >= 200 and response.status_code <= 300:
             print("Send test email: Success!")
         else:

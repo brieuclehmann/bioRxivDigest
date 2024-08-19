@@ -2,7 +2,7 @@
 run:
 python -m relevancy run_all_day_paper \
   --output_dir ./data \
-  --model_name="gpt-3.5-turbo-16k" \
+  --model_name="gpt-4o-mini" \
 """
 import time
 import json

@@ -8,7 +8,7 @@ import requests
 
 
 def _download_new_papers(server="biorxiv"):
-    base_url = "https://api.biorxiv.org/details/" + server + "/1d"  # https://arxiv.org/list/cs/new
+    base_url = "https://api.biorxiv.org/details/" + server + "/2d"  
     response = requests.get(base_url)
     data = response.json()
     dt_list = data['collection']

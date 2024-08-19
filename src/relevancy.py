@@ -90,7 +90,7 @@ def process_subject_fields(subjects):
 def generate_relevance_score(
     all_papers,
     query,
-    model_name="gpt-3.5-turbo-16k",
+    model_name="gpt-4o-mini",
     threshold_score=8,
     num_paper_in_prompt=4,
     temperature=0.4,

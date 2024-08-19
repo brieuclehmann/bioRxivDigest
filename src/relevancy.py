@@ -139,7 +139,7 @@ def run_all_day_paper(
     query={"interest":"", "subjects":["Computation and Language", "Artificial Intelligence"]},
     date=None,
     data_dir="../data",
-    model_name="gpt-3.5-turbo-16k",
+    model_name="gpt-4o-mini",
     threshold_score=8,
     num_paper_in_prompt=8,
     temperature=0.4,

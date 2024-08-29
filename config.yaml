@@ -9,7 +9,7 @@ categories: []
 # will have their papers filtered out.
 #
 # Must be within 1-10
-threshold: 7
+threshold: 8
 
 # A natural language statement that the large language model will use to judge which papers are relevant 
 #
@@ -21,6 +21,6 @@ threshold: 7
 # This can be empty, which just return a full list of papers with no judgement or filtering,
 # in whatever order arXiv responds with.
 interest: |
-  1. Statistical or machine learning methods that identify or mitigate health disparities
-  2. Algorithmic fairness
-  3. Methodological approaches around the topic of health equity
+  1. I am interested in methodological papers that are explicitly concerned with the topic of health equity.
+  2. I am particularly interested in papers concerned with fairness and equity in the context of genomic studies or clinical trials.
+  3. I am also interested in papers introducing new statistical or machine learning methods to identify or mitigate health disparities.
